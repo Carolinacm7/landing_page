@@ -1,4 +1,4 @@
-# Symplifica- Prueba de  seccion
+# Symplifica- Prueba 
 
 _Visualizacion  réplica de  seccion de  "Symplifica"  con  características de estilo y su funcionalidad responsive.​_
 
