@@ -44,7 +44,7 @@ body {
 aside {
     position: absolute;
     width: 28%;
-    top: 191px;
+    top: 31%;
     left: 955px;
 }
 
@@ -171,13 +171,13 @@ input::placeholder {
     height: 869px;
     margin-left: 29px;
     margin-top: 21px;
-    width: 47%;
+    width: 67%;
 }
 
 .container_user_info {
     background-color: #ffff;
     border-radius: 10px;
-    bottom: 119px;
+    bottom: 13%;
     position: relative;
 }
 
@@ -185,7 +185,7 @@ input::placeholder {
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 22vh;
+    height: 23vh;
     justify-content: space-between;
 }
 
@@ -241,7 +241,7 @@ input::placeholder {
 .inf_table {
     background-color: #ffff;
     border-radius: 15px;
-    bottom: 82px;
+    bottom: 9%;
     position: relative;
 }
 
@@ -270,33 +270,33 @@ input::placeholder {
     width: 25px;
 }
 .arrow_1 {
-    left: 410px;
-    top: 25px;
+    left: 46%;
+    top: 3%;
 }
 
 .arrow_2 {
-    left: 860px;
-    top: 25px;
+    left: 95%;
+    top: 3%;
 }
 
 .arrow_3 {
-    left: 414px;
-    top: 242px;
+    left: 46%;
+    top: 36%;
 }
 
 .arrow_4 {
-    left: 860px;
+    left: 95%;
     top: 242px;
 }
 
 .arrow_5 {
-    left: 413px;
-    top: 467px;
+    left: 46%;
+    top: 69%;
 }
 
 .arrow_6 {
-    left: 860px;
-    top: 467px;
+    left: 95%;
+    top: 69%;
 }
 
 /*Aside container notifications */
@@ -404,7 +404,9 @@ h1{text-align: center;}
         width: 1.1rem;
         margin-right: 198px;
     }
+    .user {width: 48%;}
 
+    .alert {width: 19%; }
     nav hr {
         width: 327px;
     }
@@ -438,6 +440,10 @@ h1{text-align: center;}
         margin-left: 13px;
         margin-top: 13px;
     }
+    .container_user_info {bottom: 48%;}
+
+    .user_img_info {width: 33%;}
+
     .user_info {
         flex-direction: column;
         height: 41vh;
@@ -448,10 +454,8 @@ h1{text-align: center;}
         margin: 0;
     }
     
+
     .txt_title_user {align-items: center;}
-
-
-
 
     .option_user td,
     tr {
@@ -461,53 +465,44 @@ h1{text-align: center;}
         width: 354px;
         font-size: 1rem;
     }
-
+    .inf_table{bottom: 32%;}
+    
     .inf_table td,
     tr {
         text-align: center;
         padding: 8px;
     }
-
+    .icon_table {
+        width: 47%;
+    }
     .arrow_1 {
-        position: absolute;
-        top: 13px;
-        left: 150px;
-        width: 22px;
+        left: 42%;
+        top: 2%;
     }
 
     .arrow_2 {
-        position: absolute;
-        top: 13px;
-        left: 306px;
-        width: 22px;
+        left: 89%;
+        top: 2%;
     }
 
     .arrow_3 {
-        left: 150px;
-        position: absolute;
-        top: 237px;
-        width: 22px;
+        left: 42%;
+        top: 35%;
     }
 
     .arrow_4 {
-        left: 306px;
-        position: absolute;
-        top: 237px;
-        width: 22px;
+        left: 89%;
+        top: 35%;
     }
 
     .arrow_5 {
-        position: absolute;
-        left: 150px;
-        top: 462px;
-        width: 22px;
+        left: 42%;
+        top: 69%;
     }
 
     .arrow_6 {
-        position: absolute;
-        left: 306px;
-        top: 462px;
-        width: 22px;
+        left: 89%;
+        top: 69%;
     }
 
     .btn_worker_more button {width: 325px;}
