@@ -157,7 +157,7 @@ nav hr {
     padding: 5px;
     position: relative;
     top: 4px;
-    width: 65%;
+    width: 64%;
 }
 
 input::placeholder {
@@ -210,8 +210,6 @@ input::placeholder {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .button_user button {
     margin: 27px;
@@ -307,7 +305,9 @@ input::placeholder {
     display: flex;
     flex-direction: column;
 }
-
+.notification{
+    width: 100%;
+}
 .title_aside,.subtitle_aside,.bt_aside {margin: 19px;}
 
 .aside_1_p { text-align: center;}
@@ -318,7 +318,7 @@ input::placeholder {
     border: none;
     height: 2px;
     margin: 21px;
-    width: 340px;
+    width: 90%;
 }
 
 .btn_worker_more button {
@@ -380,12 +380,12 @@ input::placeholder {
     }
     aside {
         position: inherit;
-        width: 338px;
-        margin-top: 670px;
-        margin-left: 16px;
+        width: 84%;
+        margin-top: 160%;
+        margin-left: 32px;
         text-align: center;
     }
-h1{text-align: center;}
+    h1{text-align: center;}
     .main_header {
         height: 66vh;
     }
@@ -419,6 +419,7 @@ h1{text-align: center;}
         position: relative;
         top: 37px;
         right: 47px;
+        
 
     }
     .category_menu {
@@ -426,6 +427,7 @@ h1{text-align: center;}
     }
     .txt_menu {
         font-size: 1.1rem;
+        padding: 3px;
     }
 
     .search_menu {
@@ -435,10 +437,8 @@ h1{text-align: center;}
     }
 
     .main_container {
-        width: 338px;
+        width: 84%;
         height: 393px;
-        margin-left: 13px;
-        margin-top: 13px;
     }
     .container_user_info {bottom: 48%;}
 
@@ -446,23 +446,18 @@ h1{text-align: center;}
 
     .user_info {
         flex-direction: column;
-        height: 41vh;
+        height: 47vh;
     }
     .inf_img_txt {
         align-items: center;
         flex-direction: column;
         margin: 0;
     }
-    
 
     .txt_title_user {align-items: center;}
 
-    .option_user td,
-    tr {
-        border: 2px solid #C5CDD9;
-        text-align: center;
-        padding: 16px;
-        width: 354px;
+    .option_user td, tr {
+        padding: 6px;
         font-size: 1rem;
     }
     .inf_table{bottom: 32%;}
@@ -471,6 +466,7 @@ h1{text-align: center;}
     tr {
         text-align: center;
         padding: 8px;
+        
     }
     .icon_table {
         width: 47%;
@@ -505,5 +501,8 @@ h1{text-align: center;}
         top: 69%;
     }
 
-    .btn_worker_more button {width: 307px;}
+    .notification{
+        width: 100%;
+    }
+    .btn_worker_more button {width: 95%;}
 }
