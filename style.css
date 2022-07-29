@@ -39,14 +39,11 @@
 }
 body {
     background-color: var(--color-white);
-    height: 1071px;
-    width: 1898px;
-
 }
 
 aside {
     position: absolute;
-    width: 379px;
+    width: 28%;
     top: 191px;
     left: 955px;
 }
@@ -104,10 +101,11 @@ button {
 
 .alert {
     margin: 10px;
-    width: 18%;
+    width: 9%;
+    height: 3.5vh;
 }
 
-.user {width: 3rem;}
+.user {width: 21%;}
 
 /* Menu Desktop*/
 nav hr {
@@ -128,6 +126,7 @@ nav hr {
 .category_menu {
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 
 .txt_menu {
@@ -154,11 +153,11 @@ nav hr {
 .search_img {
     border-right: 2px solid rgb(165, 243, 252, 0.2);
     height: 70%;
-    left: 34px;
+    left: 51px;
     padding: 5px;
     position: relative;
     top: 4px;
-    width: 27px;
+    width: 65%;
 }
 
 input::placeholder {
@@ -172,7 +171,7 @@ input::placeholder {
     height: 869px;
     margin-left: 29px;
     margin-top: 21px;
-    width: 900px;
+    width: 47%;
 }
 
 .container_user_info {
@@ -229,13 +228,14 @@ input::placeholder {
     /* hide standard table (collapsed) border */
     box-shadow: 0 0 0 2px var(--color-gray);
     background-color: white;
+    width: 100%;
 }
 
 .option_user td,tr {
     border: 2px solid var(--color-gray);
     padding: 25px;
     text-align: center;
-    width: 300px;
+    width: 30%;
 }
 /* table information   user worker = table 2 */
 .inf_table {
@@ -245,7 +245,7 @@ input::placeholder {
     position: relative;
 }
 
-.table-fill {
+.table_fill {
     border-collapse: collapse;
     border-radius: 20px;
     border-style: hidden;
@@ -265,46 +265,38 @@ input::placeholder {
     width: 15%;
 }
 
-.flecha {
+.arrow_1 , .arrow_2, .arrow_3, .arrow_4 , .arrow_5 , .arrow_6 {
+    position: absolute;
+    width: 25px;
+}
+.arrow_1 {
     left: 410px;
-    position: absolute;
     top: 25px;
-    width: 25px;
 }
 
-.flecha-2 {
+.arrow_2 {
     left: 860px;
-    position: absolute;
     top: 25px;
-    width: 25px;
 }
 
-.flecha-3 {
-    position: absolute;
+.arrow_3 {
     left: 414px;
     top: 242px;
-    width: 25px;
 }
 
-.flecha-4 {
-    position: absolute;
+.arrow_4 {
     left: 860px;
     top: 242px;
-    width: 25px;
 }
 
-.flecha-5 {
-    position: absolute;
+.arrow_5 {
     left: 413px;
     top: 467px;
-    width: 25px;
 }
 
-.flecha-6 {
-    position: absolute;
+.arrow_6 {
     left: 860px;
     top: 467px;
-    width: 25px;
 }
 
 /*Aside container notifications */
@@ -384,8 +376,6 @@ input::placeholder {
 
 @media (max-width: 600px) {
     body {
-        width: 590px;
-        height: 10vh;
         align-items: center;
     }
     aside {
@@ -478,42 +468,42 @@ h1{text-align: center;}
         padding: 8px;
     }
 
-    .flecha {
+    .arrow_1 {
         position: absolute;
         top: 13px;
         left: 150px;
         width: 22px;
     }
 
-    .flecha-2 {
+    .arrow_2 {
         position: absolute;
         top: 13px;
         left: 306px;
         width: 22px;
     }
 
-    .flecha-3 {
+    .arrow_3 {
         left: 150px;
         position: absolute;
         top: 237px;
         width: 22px;
     }
 
-    .flecha-4 {
+    .arrow_4 {
         left: 306px;
         position: absolute;
         top: 237px;
         width: 22px;
     }
 
-    .flecha-5 {
+    .arrow_5 {
         position: absolute;
         left: 150px;
         top: 462px;
         width: 22px;
     }
 
-    .flecha-6 {
+    .arrow_6 {
         position: absolute;
         left: 306px;
         top: 462px;
