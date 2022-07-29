@@ -1,22 +1,27 @@
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(./resources/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./resources/fonts/Roboto-Regular.ttf);
+}
+
 :root {
-    /* para que sea una variable necesito -- */
     /* colors */
+    --color-blue: #075985;
+    --color-gray: #E5E7EB;
     --color-primary: #111827;
     --color-secundary: #6B7280;
     --color-white: #F3F4F6;
-    --color-blue: #075985;
-    --color-light-blue: #0891B2;
-    --gradient-header: linear-gradient(90deg, #075985 0%, #0891B2 100%);
-    ;
-    --font-family-title: roboto-black;
-    --font-family-base: roboto-regular;
-
-
+    --gradient-header: linear-gradient(90deg, #075985 34%, #0891B2 92%);
+    /* fonts */
+    --font-family-title: Roboto-Medium;
+    --font-family-base: Roboto-Regular;
 }
 
-*,
-*:before,
-*:after {
+*,*:before,*:after {
     box-sizing: border-box;
     margin: 0;
 }
@@ -25,412 +30,499 @@
     padding-left: 10%;
 }
 
-body {
-    background-color: var(--color-white);
-    width: 1898px;
-    height: 1071px;
+.pt5 {
+    padding-top: 5%;
 }
 
+.shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+body {
+    background-color: var(--color-white);
+    height: 1071px;
+    width: 1898px;
+
+}
+
+aside {
+    position: absolute;
+    width: 379px;
+    top: 191px;
+    left: 955px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {font-size: 1.3rem;}
+
+h3 {font-size: 1.1rem;}
+
+p,ul,li,input,td,tr {
+    color: var(--color-primary);
+    font-family: var(--font-family-base);
+    font-size: 0.95rem;
+}
+
+button {
+    background-color: white;
+    border: 2px solid var(--color-gray);
+    border-radius: 10px;
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    font-weight: 600;
+}
 /* Header */
 .main_header {
+    align-content: flex-start;
     background: var(--gradient-header);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    height: 44vh;
     justify-content: space-between;
-    align-content: flex-start;
-    height: 36vh;
 }
 
-.container {
-    padding-left: 40px;
-    padding-top: 10px;
+.container {padding: 30px;}
+
+.container_logo_menu {
+    align-items: center;
+    display: flex;
+    height: 12vh;
+    justify-content: space-between;
 }
 
 .logo {
     height: 2.5rem;
     width: 1rem;
-
-}
-
-.alert_user {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.user {
-    width: 3rem;
-    margin-right: 15px;
-    margin-top: 10px;
-
 }
 
 .alert {
-    width: 1.5rem;
     margin: 10px;
+    width: 1.5rem;
 }
+
+.user {width: 3rem;}
 
 /* Menu Desktop*/
 nav hr {
-        margin: 5px;
-    width: 1278px;
-    height: 1px;
-    margin-left: 0px;
+    background-color: #39A6C0;
+    border: none;
+    height: 2px;
+    width: 1300px;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     height: 11vh;
-
+    justify-content: space-between;
+    list-style: none;
 }
 
 .category_menu {
     display: flex;
-    justify-content: space-between;
-}
-
-.text_user {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.txt_title_user {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .txt_menu {
-    font-family: var(--font-family-base);
     color: var(--color-white);
+    font-family: var(--font-family-base);
     font-size: 1rem;
 }
 
+/*Search and input */
 .search_menu {
     display: flex;
-    width: 30%;
     justify-content: space-evenly;
+    width: 32%;
 }
 
 .menu .search_menu input {
-    border-radius: 10px;
-    background-color: rgb(165, 243, 252, 0.2);
+    background-color: rgb(197, 205, 217, 0.1);
     border: none;
-    height: 5vh;
-    width: 360px;
-
+    border-radius: 10px;
+    height: 5.5vh;
+    width: 100%;
 }
 
 .search_img {
-   width: 25px;
+    border-right: 2px solid rgb(165, 243, 252, 0.2);
+    height: 26px;
+    left: 34px;
     padding: 5px;
-    height: 24px;
     position: relative;
-    left: 26px;
     top: 4px;
-    border-right: 1px solid white;
+    width: 27px;
 }
 
 input::placeholder {
     color: var(--color-white);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 41px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    text-indent: 40px;
 }
 
-/* contain User */
+/* contain User = user info and table*/
 .main_container {
+    height: 869px;
+    margin-left: 29px;
+    margin-top: 21px;
     width: 900px;
-    height: 384px;
-    margin-left: 36px;
-    margin-top: 26px;
 }
-.container_user_info{
-    position: relative;
-    bottom: 84px;
+
+.container_user_info {
     background-color: #ffff;
     border-radius: 10px;
-    height: 29vh;
-}
-.user_info img {
-    width: 100px;
-    margin: 10px;
+    bottom: 119px;
+    position: relative;
 }
 
 .user_info {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    height: 22vh;
+    justify-content: space-between;
+}
+
+.inf_img_txt {
     align-items: center;
+    display: flex;
+    margin-left: 65px;
 }
 
-.text_user p {
-    font-size: var(--font-family-base);
-    margin-bottom: 10px;
-}
-.button_user button{
-    padding: 10px;
-    width: 287px;
-    background-color: var(--color-white);
-    border-radius: 10px;
-    border: 1px solid #C5CDD9;
-    font-weight: 600;
+.user_img_info {
     margin: 10px;
+    width: 80px;
 }
 
-table .option_user{
-    border-collapse:collapse;
+.text_user {
+    display: flex;
+    flex-direction: row;
 }
+
+.txt_title_user {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.button_user button {
+    margin: 27px;
+    padding: 6px;
+    width: 121px;
+}
+
+/*table info user worker = table 1 */
+.option_user {
+    border-collapse: collapse;
+    border-radius:0px 0px 10px 10px ;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    border-style: hidden;
+    /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 2px var(--color-gray);
+    background-color: white;
+}
+
 .option_user td,tr {
-    border: 2px solid #C5CDD9;
-    text-align: left;
+    border: 2px solid var(--color-gray);
     padding: 25px;
+    text-align: center;
     width: 300px;
 }
-
-
-
-/* information table  */
-table{
-    border-collapse:collapse;
-}
-
-.inf_table{
-    background-color: white;
+/* table information   user worker = table 2 */
+.inf_table {
+    background-color: #ffff;
     border-radius: 15px;
+    bottom: 82px;
     position: relative;
-    bottom: 64px;
-    background-color: #ffff; 
 }
 
-
-.inf_table td,tr {
-        border: 2px solid #C5CDD9;
-        text-align: left;
-        padding: 30px;
+.table-fill {
+    border-collapse: collapse;
+    border-radius: 20px;
+    border-style: hidden;
+    /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 2px var(--color-gray);
+    /* this draws the table border  */
 }
 
-.icon_table{
-    width: 60px;
+.inf_table td {
+    border: 2px solid var(--color-gray);
+    padding: 30px;
+    text-align: left;
+}
+
+.icon_table {
     margin: 10px;
+    width: 60px;
 }
-.flecha{
+
+.flecha {
+    left: 410px;
     position: absolute;
     top: 25px;
-    left: 410px;
     width: 25px;
 }
-.flecha-2{
+
+.flecha-2 {
+    left: 860px;
     position: absolute;
     top: 25px;
+    width: 25px;
+}
+
+.flecha-3 {
+    position: absolute;
+    left: 414px;
+    top: 242px;
+    width: 25px;
+}
+
+.flecha-4 {
+    position: absolute;
     left: 860px;
+    top: 242px;
     width: 25px;
 }
 
-.flecha-3{
+.flecha-5 {
     position: absolute;
-    top: 262px;
-    left: 410px;
+    left: 413px;
+    top: 467px;
     width: 25px;
 }
 
-.flecha-4{
+.flecha-6 {
     position: absolute;
-    top: 262px;
     left: 860px;
+    top: 467px;
     width: 25px;
 }
 
-.flecha-5{
-    position: absolute;
-    top: 505px;
-    left: 410px;
-    width: 25px;
-}
-
-.flecha-6{
-    position: absolute;
-    top: 505px;
-    left: 860px;
-    width: 25px;
-}
-aside{
-    position: absolute;
-    width: 350px;
-    top: 180px;
-    left: 972px;
-}
-
-.container_asaide_one{
+/*Aside container notifications */
+.container_notifications {
+    align-items: center;
     background-color: #ffff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.title_aside,.subtitle_aside,.bt_aside {margin: 19px;}
+
+.aside_1_p { text-align: center;}
+
+.container_notifications hr {
     align-items: center;
-    
+    background-color: var(--color-gray);
+    border: none;
+    height: 2px;
+    margin: 21px;
+    width: 340px;
 }
 
-.title_aside,.subtitle_aside, .aside_1_p, .bt_aside{
-    margin: 15px;
-}
-
-.btn_worker_more button{
-    padding: 10px;
-    width: 287px;
-    background-color: var(--color-white);
+.btn_worker_more button {
     border-radius: 10px;
-    border: 1px solid #C5CDD9;
-    font-weight: 600;
     margin: 10px;
-    
+    padding: 8px;
+    width: 351px;
 }
 
-.worker{
+.worker {
     background-color: #ffff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     margin-top: 18px;
-    align-items: center;
-    justify-content: flex-end;
+    padding: 5px;
 }
+
 .cont_worker {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
-    align-items: center;
-}
-
-.btn_worker_go button{
-    padding: 5px;
-    width: 50px;
-    background-color: var(--color-white);
-    border-radius: 10px;
-    border: 1px solid #C5CDD9;
-    font-weight: 600;
-    margin: 10px;
-}
-
-.cont_worker img{
-    width: 40px;
-    margin: 10px;
-}
-
-@media (max-width: 600px){
-body{
-    width: 590px;
-    height: 10vh;
-}
-.main_header{
-    height: 38vh;
-}
-.container {
-    padding-left: 25px;
-}
-
-.alert_user {
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-}
-
-.logo {
-    height: 2.5rem;
-    width: 1.1rem;
-    margin-right: 198px;
-}
-nav hr {
-    width: 343px;
-}
-.menu {
-    list-style: none;
-    display: flex;
     justify-content: space-between;
-    height: 11vh;
-    flex-direction: column;
-    position: relative;
-    right: 141px;
-    font-size: 2rem;
-}
-.txt_menu {
-    font-size: 1.1rem;
+    margin-top: 10px;
 }
 
-.search_menu {
-    justify-content: flex-start;
-    align-items: stretch;
-    width: 66%;
+.title_aside_2{
+    padding: 11px;
 }
-.main_container {
-    width: 356px;
-    height: 414px;
-    margin-left: 13px;
-    margin-top: 13px;
+.img_txt_worker {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    
 }
-.user_info {
-    flex-direction: column;
-}
-.container_user_info {
-    height: 49vh;
-}
-.option_user td, tr {
-    border: 2px solid #C5CDD9;
+
+.btn_worker_go button {
+    border-radius: 50px;
+    margin: 10px;
+    padding: 2px;
     text-align: center;
-    padding: 20px;
-    width: 354px;
-    font-size: 1rem;
+    width: 61px;
 }
-.inf_table td, tr {
-    text-align: center;
-    padding: 8px;
+
+.cont_worker img {
+    margin: 10px;
+    width: 40px;
 }
-.flecha {
-    position: absolute;
-    top: 13px;
-    left: 150px;
-    width: 22px;
+
+.line_worker {
+    background-color: var(--color-gray);
+    border: none;
+    height: 2px;
 }
-.flecha-2 {
-    position: absolute;
-    top: 13px;
-    left: 323px;
-    width: 22px;
-}
-.flecha-3 {
-    position: absolute;
-    top: 230px;
-    left: 150px;
-    width: 22px;
-}
-.flecha-4 {
-    position: absolute;
-    top: 230px;
-    left: 323px;
-    width: 22px;
-}
-.flecha-5 {
-    position: absolute;
-    top: 450px;
-    left: 150px;
-    width: 22px;
-}
-.flecha-6 {
-    position: absolute;
-    top: 450px;
-    left: 323px;
-    width: 22px;
-}
-aside {
-    position:inherit;
-    width: 350px;
-    margin-top: 600px;
-}
+
+@media (max-width: 600px) {
+    body {
+        width: 590px;
+        height: 10vh;
+        align-items: center;
+    }
+    aside {
+        position: inherit;
+        width: 338px;
+        margin-top: 670px;
+        margin-left: 16px;
+        text-align: center;
+    }
+h1{text-align: center;}
+    .main_header {
+        height: 66vh;
+    }
+
+    .container {
+        padding-left: 30px;
+    }
+
+    .alert_user {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        height: 2.5rem;
+        width: 1.1rem;
+        margin-right: 198px;
+    }
+
+    nav hr {
+        width: 327px;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        height: 11vh;
+        flex-direction: row;
+        position: relative;
+        top: 37px;
+        right: 47px;
+
+    }
+    .category_menu {
+        flex-direction: column;
+    }
+    .txt_menu {
+        font-size: 1.1rem;
+    }
+
+    .search_menu {
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 66%;
+    }
+
+    .main_container {
+        width: 338px;
+        height: 393px;
+        margin-left: 13px;
+        margin-top: 13px;
+    }
+    .user_info {
+        flex-direction: column;
+        height: 41vh;
+    }
+    .inf_img_txt {
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .txt_title_user {align-items: center;}
+
+
+
+
+    .option_user td,
+    tr {
+        border: 2px solid #C5CDD9;
+        text-align: center;
+        padding: 16px;
+        width: 354px;
+        font-size: 1rem;
+    }
+
+    .inf_table td,
+    tr {
+        text-align: center;
+        padding: 8px;
+    }
+
+    .flecha {
+        position: absolute;
+        top: 13px;
+        left: 150px;
+        width: 22px;
+    }
+
+    .flecha-2 {
+        position: absolute;
+        top: 13px;
+        left: 306px;
+        width: 22px;
+    }
+
+    .flecha-3 {
+        left: 150px;
+        position: absolute;
+        top: 237px;
+        width: 22px;
+    }
+
+    .flecha-4 {
+        left: 306px;
+        position: absolute;
+        top: 237px;
+        width: 22px;
+    }
+
+    .flecha-5 {
+        position: absolute;
+        left: 150px;
+        top: 462px;
+        width: 22px;
+    }
+
+    .flecha-6 {
+        position: absolute;
+        left: 306px;
+        top: 462px;
+        width: 22px;
+    }
+
+    
+    .btn_worker_more button {width: 325px;}
 }
