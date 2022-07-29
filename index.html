@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="angiecarolinacm">
     <title>Prueba Symplifica </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/x-icon" href="./resources/img/Logo.png">
 </head>
 
@@ -27,7 +27,31 @@
             <!-- cont_two = Menu and search -->
             <nav class="cont_two">
                 <hr>
-                <div class="menu">
+                <!--Menu and search Mobile -->
+                <div class="menu_mobile show_on_mobile">
+                    <div class="menu_mobile_hamburguer"></div>
+                    <input id="toggle" type="checkbox"></input>
+                    
+                    <label for="toggle" class="hamburger">
+                      <div class="top_hamburger"></div>
+                      <div class="center_hamburger"></div>
+                      <div class="bottom_hamburger"></div>
+                    </label>
+                    
+                    <div class="nav shadow">
+                      <div class="nav-wrapper">
+                        <nav>                         
+                            <li class="txt_menu inicio pl4"> Inicio </li>
+                            <li class="txt_menu perfil pl4"> Perfil </li>
+                            <li class="txt_menu contacto pl4"> Contratos </li>
+                            <li class="txt_menu pagos pl4"> Pagos </li>
+                            <li class="txt_menu historial pl4 "> Historial </li>
+                        </nav>
+                      </div>
+                    </div>
+                    </div>
+                    <!--Menu and search Mobile desktop-->
+                <div class="menu show_on_desktop ">
                     <ul class="category_menu">
                         <li class="txt_menu inicio pl4"> Inicio </li>
                         <li class="txt_menu perfil pl4"> Perfil </li>
@@ -41,6 +65,8 @@
                         <input type="text" id="search" name="search" placeholder="Buscar">
                     </div>
                 </div>
+
+
             </nav>
         </div>
     </header>
