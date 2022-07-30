@@ -11,6 +11,7 @@
 :root {
     /* colors */
     --color-blue: #075985;
+    --color-blue-ligth:#A5F3FC;
     --color-gray: #E5E7EB;
     --color-primary: #111827;
     --color-secundary: #6B7280;
@@ -35,7 +36,8 @@
 
 .shadow {box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
 
-body {background-color: var(--color-white);}
+body {
+    background-color: var(--color-white);}
 
 h1,
 h2,
@@ -50,8 +52,13 @@ h2 {font-size: 1.3rem;}
 
 h3 {font-size: 1.1rem;}
 
+a{
+    text-decoration: none;
+}
 p,
-ul,
+a,
+nav,
+a,
 li,
 input,
 td,
@@ -87,27 +94,34 @@ button {
     justify-content: space-between;
 }
 
+.cont_one{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .logo {height: 50%;}
 
 .alert {
     margin: 10px;
-    width: 18%;
-    height: 2.5vh;
+    width: 8%;
 }
 
-.user {height: 38px;}
+.alert:hover{
+    filter: brightness(250%);
+    cursor: pointer;
+}
+
+.user {width: 21%;}
 /* header |end |logo and user container one Desktop*/
 /*nav | start| menu and searchDesktop */
-nav hr {
+.header_line {
     background-color: #39A6C0;
     border: none;
     height: 2px;
-    width: 1300px;
+    width: 100%;
 }
 
-.show_on_mobile {
-    display: none;
-}
+.show_on_mobile {display: none;}
 
 .menu {
     align-items: center;
@@ -129,7 +143,13 @@ nav hr {
     font-size: 1rem;
 }
 
-.txt_menu:hover {color: #A5F3FC;}
+.txt_menu:hover {
+    color: var(#A5F3FC);
+    cursor: pointer;
+    font-size:  1.2rem ;
+    text-decoration:underline;
+    font-weight: 600;
+}
 
 /*Search and input */
 .search_menu {
@@ -138,12 +158,15 @@ nav hr {
     width: 35%;
 }
 
-.menu .search_menu input {
+.menu .search_menu .place_search {
     background-color: rgb(197, 205, 217, 0.1);
     border: none;
     border-radius: 10px;
     height: 5.5vh;
     width: 100%;
+    text-indent: 39px;
+    color: white;
+    outline: none;;
 }
 
 .search_img {
@@ -156,11 +179,17 @@ nav hr {
     width: 64%;
 }
 
-input::placeholder {
+.place_search::placeholder {
     color: var(--color-white);
     font-weight: 400;
     text-indent: 40px;
+    position:relative;
 }
+
+.place_search:hover{
+    box-shadow: 0 0 0 2px var(--color-white);
+}
+
 
 /*nav | start| menu and search Desktop */
 /* article|start | user information Desktop*/
@@ -215,7 +244,16 @@ input::placeholder {
     margin: 27px;
     padding: 6px;
     width: 121px;
+    letter-spacing: 0.7px;
 }
+
+.button_user:hover , .btn_worker_more:hover, .btn_worker_go:hover {
+    background-color: var(--color-blue);
+    color:var(--color-white);
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    }
 /* article|end | user information Desktop*/
 /*table info user worker = table 1 */
 .option_user {
@@ -234,6 +272,7 @@ input::placeholder {
     padding: 25px;
     text-align: center;
     width: 30%;
+    cursor: context-menu;
 }
 /* article |start|info Table work Desktop */
 .info_table {
@@ -263,14 +302,19 @@ input::placeholder {
     width: 15%;
 }
 
-.arrow_1,
-.arrow_2,
-.arrow_3,
-.arrow_4,
-.arrow_5,
-.arrow_6 {
+.contracts:hover{
+background-color: var(--color-blue-ligth);
+cursor: alias;
+}
+
+.arrow {
     position: absolute;
     width: 25px;
+}
+
+.arrow:hover{
+   filter: saturate(260);
+   cursor: pointer;
 }
 
 .arrow_1 {
@@ -335,10 +379,13 @@ input::placeholder {
 /*aside|start| container worker */
 .btn_worker_more {
     border-radius: 10px;
+    letter-spacing: 0.7px;
     margin: 4% 0%;
     padding: 8px;
     width: 100%;
 }
+
+
 
 .worker {
     background-color: #ffff;
@@ -368,6 +415,7 @@ input::placeholder {
     padding: 2px;
     text-align: center;
     width: 61px;
+    letter-spacing: 0.7px;
 }
 
 .img_worker {
@@ -407,7 +455,7 @@ input::placeholder {
 
     .user_info {
         flex-direction: column;
-        height: 52vh;
+        height: 50vh;
     }
 
     .alert_user {
@@ -421,12 +469,14 @@ input::placeholder {
         margin-right: 198px;
     }
 
-    .user {width: 48%;}
+    .container_logo_menu {height: 14vh;}
 
-    .alert {width: 19%;}
+    .user {width: 30%;}
+
+    .alert {width: 12%;}
     /* header | end| logo and user container one Mobile*/
     /*nav | start| menu and search Mobile */
-    nav hr {width: 327px;}
+    
 
     .show_on_desktop {display: none;}
 
@@ -465,7 +515,7 @@ input::placeholder {
         height: 100%;
     }
 
-    nav .txt_menu {
+    .menu_responsive .txt_menu {
         position: relative;
         text-decoration: none;
         color: var(--color-primary);
@@ -477,7 +527,7 @@ input::placeholder {
         text-align: center;
     }
 
-    nav .txt_menu:before {
+    .menu_responsive .txt_menu:before {
         content: '';
         height: 0;
         position: fixed;
@@ -514,7 +564,6 @@ input::placeholder {
     /*article|start | user information*/
     .nesting_container {flex-direction: column;}
 
-    .main_container,.aside {margin-top: 2%;}
 
     .user_img_info {width: 33%;}
 
@@ -527,8 +576,7 @@ input::placeholder {
     .txt_title_user {align-items: center;}
 
     .option_user tr>td {padding: 2px;}
-
-
+    
     /*article | end |user information mobile*/
     /* article |start|info Table work mobile*/
     .info_table {bottom: 32%;}
@@ -572,13 +620,18 @@ input::placeholder {
         top: 69%;
     }
     /* article|end| info Table work*/
+    .container_notifications {
+        margin-top: 30px;
+    }
     .notification {width: 100%;}
 
     .btn_worker_more button {width: 95%;}
 }
 
 @media (max-width: 1024px) {
-    .alert {height: auto;}
+.main_header{
+    height: 30vh;
+}
 
     .main_container,.aside {margin-top: -5%;}
 
