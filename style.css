@@ -455,6 +455,7 @@ cursor: alias;
 
     .user_info {
         flex-direction: column;
+        justify-content: center;
         height: 50vh;
     }
 
