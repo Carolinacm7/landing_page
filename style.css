@@ -497,7 +497,7 @@ cursor: alias;
 
     .nav {
         position: fixed;
-        width: 40%;
+        width: 29%;
         height: 20%;
         top: 1%;
         background-color: var(--color-white);
@@ -516,6 +516,10 @@ cursor: alias;
         height: 100%;
     }
 
+    .menu_responsive{
+        list-style: none;
+    }
+
     .menu_responsive .txt_menu {
         position: relative;
         text-decoration: none;
@@ -528,6 +532,9 @@ cursor: alias;
         text-align: center;
     }
 
+    .pl4{
+        padding: 4%;
+    }
     .menu_responsive .txt_menu:before {
         content: '';
         height: 0;
