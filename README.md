@@ -28,3 +28,6 @@ _Visualizacion  réplica de  seccion de  "Symplifica"  con  características de 
 # Teniendo como referente : 
 
 ![Prueba](https://github.com/Carolinacm7/Symplifica/blob/main/resources/img/Prueba.png)
+
+![Accesibilidad Desktop]()
+![Accesibilidad Mobile]()
