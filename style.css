@@ -221,7 +221,6 @@ button {
 .nesting_container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .main_container,
@@ -297,7 +296,7 @@ button {
 
 .option_user tr>td {
     border: 2px solid var(--color-gray);
-    padding: 25px;
+    padding: 2%;
     text-align: center;
     width: 30%;
     cursor: context-menu;
