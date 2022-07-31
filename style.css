@@ -494,7 +494,7 @@ button {
     .user_info {
         flex-direction: column;
         justify-content: center;
-        height: 50vh;
+        height: 56vh;
     }
 
     .alert_user {
