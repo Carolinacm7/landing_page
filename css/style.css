@@ -196,12 +196,12 @@ button {
 
 .search_img {
     border-right: 2px solid rgb(165, 243, 252, 0.2);
-    height: 70%;
+    height: 66%;
     left: 51px;
     padding: 5px;
     position: relative;
-    top: 4px;
-    width: 64%;
+    top: 7px;
+    width: 61%;
 }
 
 .place_search::placeholder {
